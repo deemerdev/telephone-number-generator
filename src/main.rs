@@ -1,6 +1,7 @@
 use std::fs::File;
 use std::io::*;
-
+mod lib;
+use lib::gen_rand;
 fn main() {
     println!("Program executed \n");
 
@@ -33,4 +34,5 @@ fn main() {
             writeln!(file, "{} \n", out);
         }
     }
+
 }
